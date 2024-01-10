@@ -8,7 +8,7 @@ namespace WrapperCsv.Controllers
     public class WrapperCsv : ControllerBase
     {
         [HttpGet("CsvToJson")]
-        public async Task<IActionResult> ExtractCV()
+        public async Task<IActionResult> WrapperCV()
         {
             try
             {
@@ -20,7 +20,7 @@ namespace WrapperCsv.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Error en la extracción para CVextractor: {ex.Message}");
+                return BadRequest($"Error en el wrapper para WrapperCsv: {ex.Message}");
             }
         }
     }
